@@ -1,0 +1,56 @@
+@import "~nprogress/nprogress.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --color-white: #ffff;
+  --color-black: #000;
+  --color-main: #0072f5;
+}
+body {
+  font-family: 'General Sans', sans-serif;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding: 40px 3%;
+}
+.first_content {
+  font-size: 46px;
+}
+.back_index {
+  color: var(--color-white);
+  text-decoration: none;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  gap: 0 6px;
+  font-weight: 500;
+  margin-bottom: 20px;
+
+  svg {
+    font-size: 30px;
+  }
+}
+
+#nprogress {
+  .bar {
+    background: var(--color-main);
+    height: 4px;
+    filter: drop-shadow(0 0 0.75rem var(--color-main));
+    
+    &::after {
+      filter: drop-shadow(0 0 0.75rem var(--color-main));
+    }
+  }
+  .peg {
+    box-shadow: 0 0 10px var(--var-color-white), 0 0 5px var(--color-white);
+  }
+  .spinner-icon {
+    border-top-color: var(--color-white);
+    display: none;
+    border-left-color: var(--color-white);
+  }
+}
+
